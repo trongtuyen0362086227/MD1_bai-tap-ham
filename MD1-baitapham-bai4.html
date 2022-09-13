@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //BAI1
+  // function tinhBinhPhuong(a){
+  //   return a*a
+  // }
+  // console.log(tinhBinhPhuong(4))
+  //TINHGIAITHUA
+  // function tinhGiaiThua(x) {
+  //     result = 1;
+  //   for (let i = 1; i <=x ; i++) {
+  //     result *= i;
+  //   }
+  // }
+  // tinhGiaiThua(4);
+  // console.log(result)
+  //
+  // let n = parseInt(prompt('nhập n vào'));
+  // let check = true;
+  // function checkNumber(number) {
+  //     if (typeof n === "number"){
+  //         check=true;
+  //         return check;
+  //     } else {
+  //         check=false;
+  //     }
+  // }
+  // checkNumber(n);
+  // console.log(check)
+  //BAI 5
+  //BAI 6
+  let arr = prompt('nhập chuỗi ký tự vào')
+  let x = prompt('Nhập ký tu bất kỳ vào')
+  // let arrText = text.trim().split("")
+  let count = 0;
+  let y = arr.search(x)
+  // console.log('y==============', y)
+  function checkX() {
+      if (y == -1) {
+          document.write(y)
+      } else {
+          for (let i = 0; i < arr.length; i++) {
+              if (x.toUpperCase() == arr[i].toUpperCase()) {
+                  count++
+              }
+          }
+          document.write('Số lần xuất hiện của ' + x + ' là : ' + count)
+      }
+  }
+  checkX()
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//BAI 1
+//   function alertMessage() {
+//     let x = prompt('xin chao')
+//   }
+//   alertMessage()
+//BAI2
+// function chngeNumber() {
+//   let number = 5
+//   number +=1;
+//   document.write('newNumber: ' + number)
+// }
+// chngeNumber()
+//BAI3
+// function number(x1,x2) {
+//   if (x1>x2){
+//     alert(x1 + '>' + x2)
+//   }else {
+//     return x1+x2;
+//   }
+// }
+// console.log(number(4,3))
+//BAI4
+// function addNumbers() {
+//     firstNum = 4;
+//     secondNum = 8;
+//     result = firstNum + secondNum;
+//     return result;
+// }
+// result = 0;
+// alert(result)
+// result = addNumbers();
+// alert(result)
+//BAI%
+let tenngoisao = prompt('Nhập tên ngôi sao vào')
+let chomsao = ['Ursa', 'Minor', 'Tarurus', 'Cygnus','Ursa', 'Minor', 'Tarurus', 'Cygnus', 'Leo']
+let sao = ['Polaris', 'Aldebaran', ', Deneb', 'Vega', 'Altair', 'Dubhe', '', 'Regulus']
+function checkStar(){
+    for (let i = 0; i < sao.length; i++) {
+        if (tenngoisao.toUpperCase()!=sao[i].toUpperCase()){
+            alert('Không tìm thấy ngôi sao này')
+        } else {
+            alert('Ngôi sao ' +sao[i]+ ' thuộc chòm sao ' + chomsao[i])
+        }
+    }
+}
+checkStar()
+</script>
+</body>
+</html>

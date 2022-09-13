@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function checkFlag(n){
+
+
+let flag = true;
+
+
+let i = 2;
+while(i <n){
+if( n%i==0 ) {
+flag = false;
+break;
+
+}
+i++;
+}
+
+return flag;
+}
+
+let n= prompt(" nhap mot so n: ");
+
+let i =2, check=0, result ="";
+while ( i < n){
+check = checkFlag(i);
+if( check == true) result += i + "; ";
+i++;
+}
+document.write(result)
+</script>
+</body>
+</html>
